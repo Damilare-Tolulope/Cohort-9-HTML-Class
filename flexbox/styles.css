@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+main {
+    background-color: chocolate;
+    margin-top: 20px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    /* gap: 10px; */
+    /* flex-basis: ;
+    flex-flow: ;
+    order: ;  */
+}
+
+.box {
+    /* padding: 10px; */
+    width: 100%;
+}
+
+.black {
+    background-color: black;
+    height: 80px;
+    align-self: center;
+}
+
+.blue {
+    background-color: blue;
+    height: 80px;
+}
+.yellow {
+    background-color: yellow;
+    height: 80px;
+}
+.green {
+    background-color: green;
+    height: 70px;
+}
+.gray {
+    background-color: gray;
+    height: 40px;
+    align-self: center;
+}
+
+
+/* ====== Tablet screen ====== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: gray;
+    }
+    
+    main {
+        flex-direction: row;
+    }
+}
+
+/* ====== Desktop screen ====== */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: white;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}

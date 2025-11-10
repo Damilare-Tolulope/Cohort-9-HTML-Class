@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 200px;
+}
+
+#heading {
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+.box{
+    padding: 20px;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.chocolate {
+    background-color: chocolate;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+/* ====== Tablet screen ======== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #heading {
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 600;
+        text-decoration: line-through;
+    }
+
+    .box {
+        padding: 30px;
+    }
+}
+
+/* ====== Mobile screen ======== */
+@media screen and (max-width: 767px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #heading {
+        text-transform: lowercase;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
+    .box {
+        padding: 40px;
+    }
+}
+
+
+#container {
+    display: grid;
+    grid-template-areas: 
+        "header  header header header"
+        "sidebar main   main   main"
+        "sidebar aside  aside  aside"
+        "footer  footer footer footer"
+    ;
+    /* grid-template-columns: 100px 1fr 1fr; */
+    padding-bottom: 100px;
+    /* gap: 10px; */
+    row-gap: 5px;
+    column-gap: 15px;
+}
+
+.cyan {
+    background-color: cyan;
+    grid-area: header;
+}
+.coral {
+    background-color: coral;
+    grid-area: sidebar;
+}
+.darkred {
+    background-color: darkred;
+    grid-area: main;
+}
+.darkgreen {
+    background-color: darkgreen;
+    grid-area: footer;
+}
+.darkolivegreen {
+    background-color: darkolivegreen;
+    grid-area: aside;
+}
