@@ -1,0 +1,30 @@
+{
+  "name": "html-class",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "detect-libc": "^2.1.2",
+    "enhanced-resolve": "^5.18.3",
+    "graceful-fs": "^4.2.11",
+    "jiti": "^2.6.1",
+    "lightningcss": "^1.30.2",
+    "lightningcss-win32-x64-msvc": "^1.30.2",
+    "magic-string": "^0.30.21",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.6",
+    "source-map-js": "^1.2.1",
+    "tapable": "^2.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./input",
+    "build": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

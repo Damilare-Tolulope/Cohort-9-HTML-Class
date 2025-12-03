@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="../output.css" />
+</head>
+<body>
+    <h1 class="font-mono">Introduction to <span class="block text-xs">Tailwind css</span></h1>
+    <p class="text-2xl">This is just a random paragraph and it is so random.</p>
+    <ul>
+        <li class="font-light text-[10px] text-red-500 bg-black">Red</li>
+        <li class="font-medium text-[30px] text-blue-500 bg-gray-500">Blue</li>
+        <li class="font-bold text-yellow-500 bg-[brown]">Yellow</li>
+        <li class="font-black text-gray-400 bg-blue-500">Gray</li>
+        <li class="font-[1000] text-[brown] bg-yellow-500">Brown</li>
+    </ul>
+
+    <button class="bg-sky-400 text-white mt-10 py-1 px-5 rounded-full hover:bg-sky-600 hover:text-black hover:px-10 transition-all duration-500">Click me</button>
+    <input type="text" class="block border-2 rounded-sm focus:outline-none focus:border-[yellow]" />
+
+    <section class="my-10 flex justify-evenly items-center">
+        <div class="bg-blue-900 h-10 w-10 rounded-full animate-pulse"></div>
+        <div class="bg-blue-900 h-10 w-10 rounded-full animate-bounce"></div>
+        <div class="bg-blue-900 h-10 w-10 rounded animate-spin"></div>
+    </section>
+
+    <div class="bg-black text-white md:bg-blue-900 md:text-yellow-500 lg:bg-red-900 lg:text-white mb-10">This will be for responsive design</div>
+</body>
+</html>
