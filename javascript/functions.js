@@ -15,3 +15,41 @@ greetUser();
 showStudentName("Claire", "Frontend Development");
 showStudentName("Abolaji", "Backend Development");
 showStudentName();
+
+
+// return keyword
+function addNumbers(num1, num2) {
+    const result = num1 + num2;
+
+    return console.log(result);
+
+    console.log("this the result!");
+}
+
+addNumbers(5, 6);
+
+
+function multiply(a, b) {
+    return a * b;
+}
+
+const res = multiply(3, 4);
+console.log(res);
+console.log(multiply(2, 4));
+
+// Funtion Expressions
+const squareNumb = function(num) {
+    console.log(num ** 2);
+}
+
+squareNumb(5);
+
+
+// arrow functions
+const displayName = (name) => {
+    return console.log(`Hi ${name}! Welcome back.`);
+}
+// const displayName = (name) => console.log(`Hi ${name}! Welcome back.`);
+
+
+displayName("Dee man");
